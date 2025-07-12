@@ -1,0 +1,153 @@
+/* Start Variables */
+:root{
+
+}
+/* Start Variables */
+/* Start global rules */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box
+}
+
+body {
+  font-family: "cairo", sans-serif;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End global rules */
+/* Start Header */
+.header .navbar {  
+  height: 100px;
+}
+
+.header .container .logo {
+  width: 60px;
+}
+
+/* Start animation part */
+.links-container {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+
+}
+
+.header .navbar .links {
+  transition: 0.3s;
+  animation-name: dynamic;
+  animation-timeline: scroll();
+}
+
+@keyframes dynamic {
+  to {
+    width: 400px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px #333;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+}
+/* End animation part */
+
+.header .navbar .links ul {
+  list-style: none;
+  padding-left: 0;
+  z-index: 999;
+  font-size: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.header .navbar .links ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.header .navbar .container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.header.container .links {
+}
+/* End Header */
+/* Start Landing */
+.landing {
+  height: calc(100vh - 100px);
+}
+
+.bgc {
+  background-image: url(../images/flat-lay-computer-laptop-isolated-whtie-background.jpg);
+  background-size: cover;
+  height: calc(100vh - 100px);
+  width: 100%;
+  border-top-left-radius: 20% 10%;
+  border-top-right-radius: 20% 10%;
+  position: relative;
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.landing .intro-text h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.landing .
